@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+#  web:
+#    ports:
+#        - "8000:80"
+  db:
+    ports:
+        - "3306:3306"
+    volumes:
+      #Linux
+#        - /var/www/html/db/app:/var/lib/mysql
+      #MacOs
+        - /Users/takashi/Database/school-manager-d:/var/lib/mysql
+    environment:
+        MYSQL_ROOT_PASSWORD: 06041944
+        MYSQL_DATABASE: school_manager_db
+        MYSQL_USER: user_user
+        MYSQL_PASSWORD: p@ssw0rd
